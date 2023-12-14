@@ -19,6 +19,17 @@ input {
   padding: 0.5rem;
   border: 1px solid hsl(270, 3%, 87%);
   border-radius: 5px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, hsl(278, 94%, 30%), hsl(249, 99%, 64%));
+}
+
+input:invalid {
+  border-color: hsl(0, 100%, 66%);
 }
 
 .form-box {

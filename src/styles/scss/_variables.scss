@@ -1,4 +1,5 @@
-$clr-active-input: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+// $clr-active-input: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+$clr-active-input: linear-gradient(to left, hsl(278, 94%, 30%), hsl(249, 99%, 64%), );
 $clr-input-error: hsl(0, 100%, 66%);
 $clr-white: hsl(0, 0%, 100%);
 $clr-light-grayish-violet: hsl(270, 3%, 87%);

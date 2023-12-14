@@ -24,6 +24,17 @@ input {
 
     border: 1px solid var.$clr-light-grayish-violet;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    border-image-slice: 1;
+    border-image-source: var.$clr-active-input;
+}
+
+input:invalid {
+    border-color: var.$clr-input-error;
 }
 
 .form-box {

@@ -19,9 +19,10 @@ export default function Form() {
                         value={name}
                         id={"name"} 
                         name={"name"}
+                        pattern={"[A-Za-z]+\\s+[A-Za-z\\s]+"}
+                        required
                         onChange={(e) => setName(e.target.value)}
-                    />
-                        
+                    />     
                 </div>
                 <div className="form-box">
                     <label htmlFor={"card_number"}>Card Number</label>
@@ -30,6 +31,8 @@ export default function Form() {
                         value={cardNumber}
                         id={"card_number"} 
                         name={"card_number"}
+                        pattern={"[0-9]{4}\\s[0-9]{4}\\s[0-9]{4}\\s[0-9]{4}"}
+                        required
                         onChange={(e) => setCardNumber(e.target.value)}
                     />
                 </div>
@@ -41,12 +44,16 @@ export default function Form() {
                             value={month} 
                             id={"month"} 
                             name={"month"}
+                            pattern={"01||02|03|04|05|06|07|08|09|10|11|12"}
+                            required
                             onChange={(e) => setMonth(e.target.value)}
                         />
                         <input
                             placeholder={"YY"}
                             value={year}
                             name={"year"}
+                            pattern={"[2-9][0-9]"}
+                            required
                             onChange={(e) => setYear(e.target.value)}
                         />
                     </div>
@@ -57,6 +64,8 @@ export default function Form() {
                             value={cvc}
                             id={"cvc"} 
                             name={"cvc"}
+                            pattern={"[0-9][0-9][0-9]"}
+                            required
                             onChange={(e) => setCvc(e.target.value)}
                         />
                     </div>
