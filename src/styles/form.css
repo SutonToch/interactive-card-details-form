@@ -28,10 +28,6 @@ input:focus {
   border-image-source: linear-gradient(to left, hsl(278, 94%, 30%), hsl(249, 99%, 64%));
 }
 
-input:invalid {
-  border-color: hsl(0, 100%, 66%);
-}
-
 .form-box {
   margin: 1em 0;
 }
@@ -60,6 +56,10 @@ input:invalid {
   padding: 1em;
   cursor: pointer;
   border: none;
+}
+
+.invalid {
+  border-color: hsl(0, 100%, 66%);
 }
 
 /*# sourceMappingURL=form.css.map */
