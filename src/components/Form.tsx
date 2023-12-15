@@ -11,8 +11,26 @@ export default function Form() {
         cvc: ""
     })
 
+    const [invalidMsgs, setInvalidMsgs] = useState({
+        hide: {
+            name: true,
+            card_number: true,
+            month: true,
+            year: true,
+            cvc: true
+        },
+        msg: {
+            name: "",
+            card_number: "",
+            month: "",
+            year: "",
+            cvc: ""
+        }
+    })
+
     function updateForm(target: HTMLInputElement) {
         const {name, value, pattern} = target;
+
         setForm((prevForm) => {
             return (
                 {
@@ -22,10 +40,47 @@ export default function Form() {
             )
         })
 
+        let invalidMsg:string
+        if(value == "") {
+            invalidMsg = "Can't be blank"
+        } else if(name != "name" && value.match("[A-Za-z]+")) {
+            invalidMsg = "Wrong format, numbers only"
+        } else {
+            invalidMsg = "Wrong format"
+        }
+
         if(!value.match(pattern)) {
             target.classList.add("invalid")
+            setInvalidMsgs((prevState) => {
+                return(
+                    {
+                        "hide": {
+                            ...prevState.hide,
+                            [name]: false
+                        },
+                        "msg": {
+                            ...prevState.msg,
+                            [name]: invalidMsg
+                        }
+                    }
+                )
+            })
         } else {
             target.classList.remove("invalid")
+            setInvalidMsgs((prevState) => {
+                return(
+                    {
+                        "hide": {
+                            ...prevState.hide,
+                            [name]: true
+                        },
+                        "msg": {
+                            ...prevState.msg,
+                            [name]: ""
+                        }
+                    }
+                )
+            })
         }
     }
     
@@ -42,7 +97,8 @@ export default function Form() {
                         pattern={"^[A-Za-z]+\\s+[A-Za-z\\s]+$"}
                         required
                         onChange={(e) => updateForm(e.target)}
-                    />     
+                    />
+                    <p className={invalidMsgs.hide.name ? "invalid-msg hide":"invalid-msg"}>{invalidMsgs.msg.name}</p>
                 </div>
                 <div className="form-box">
                     <label htmlFor={"card_number"}>Card Number</label>
@@ -55,6 +111,7 @@ export default function Form() {
                         required
                         onChange={(e) => updateForm(e.target)}
                     />
+                    <p className={invalidMsgs.hide.card_number ? "invalid-msg hide":"invalid-msg"}>{invalidMsgs.msg.card_number}</p>
                 </div>
                 <div className="form-box multi-input-line">
                     <div className="form-box-date">
@@ -89,6 +146,8 @@ export default function Form() {
                             onChange={(e) => updateForm(e.target)}
                         />
                     </div>
+                    <p className={!invalidMsgs.hide.month || !invalidMsgs.hide.year ? "invalid-msg":"invalid-msg hide"}>{invalidMsgs.msg.month == "" ? invalidMsgs.msg.year : invalidMsgs.msg.month}</p>
+                    <p className={invalidMsgs.hide.cvc ? "invalid-msg hide":"invalid-msg"} style={{gridColumn: 2}}>{invalidMsgs.msg.cvc}</p>
                 </div>
                 <input className="submit" type={"submit"} value="Confirm" />
             </form>

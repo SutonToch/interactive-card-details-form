@@ -62,4 +62,10 @@ input:focus {
   border-color: hsl(0, 100%, 66%);
 }
 
+.invalid-msg {
+  font-size: 0.6rem;
+  color: hsl(0, 100%, 66%);
+  margin-top: 0.6em;
+}
+
 /*# sourceMappingURL=form.css.map */

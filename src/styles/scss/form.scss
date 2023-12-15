@@ -66,3 +66,9 @@ input:focus {
 .invalid {
     border-color: var.$clr-input-error;
 }
+
+.invalid-msg {
+    font-size: 0.6rem;
+    color: var.$clr-input-error;
+    margin-top: 0.6em;
+}

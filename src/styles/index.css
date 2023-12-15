@@ -25,4 +25,8 @@ p {
   height: 100%;
 }
 
+.hide {
+  display: none;
+}
+
 /*# sourceMappingURL=index.css.map */
