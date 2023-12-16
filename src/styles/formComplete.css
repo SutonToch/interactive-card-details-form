@@ -1,0 +1,30 @@
+.form-complete-container {
+  grid-column-start: 2;
+  display: grid;
+  text-align: center;
+}
+.form-complete-container h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: hsl(278, 68%, 11%);
+  font-weight: 300;
+  margin: 1em 0 0.6em;
+}
+.form-complete-container p {
+  color: hsl(279, 6%, 55%);
+}
+.form-complete-container button {
+  border: none;
+  color: hsl(270, 3%, 87%);
+  background-color: hsl(278, 68%, 11%);
+  padding: 0.9em;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  margin-top: 3em;
+  cursor: pointer;
+}
+.form-complete-container button:hover {
+  opacity: 0.95;
+}
+
+/*# sourceMappingURL=formComplete.css.map */

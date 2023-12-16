@@ -58,6 +58,10 @@ input:focus {
   border: none;
 }
 
+.submit:hover {
+  opacity: 0.95;
+}
+
 .invalid {
   border-color: hsl(0, 100%, 66%);
 }

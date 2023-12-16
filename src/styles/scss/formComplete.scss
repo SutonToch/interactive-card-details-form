@@ -1,0 +1,34 @@
+@use 'variables' as var;
+
+.form-complete-container {
+    grid-column-start: 2;
+    display: grid;
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        color: var.$clr-very-dark-violet;
+        font-weight: 300;
+        margin: 1em 0 0.6em;
+    }
+
+    p {
+        color: var.$clr-dark-grayish-violet;
+    }
+
+    button {
+        border: none;
+        color: var.$clr-light-grayish-violet;
+        background-color: var.$clr-very-dark-violet;
+        padding: 0.9em;
+        border-radius: 5px;
+        font-size: 0.95rem;
+        margin-top: 3em;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.95;
+        }
+    }
+}

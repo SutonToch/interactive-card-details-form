@@ -63,6 +63,10 @@ input:focus {
     border: none;
 }
 
+.submit:hover {
+    opacity: 0.95;
+}
+
 .invalid {
     border-color: var.$clr-input-error;
 }
