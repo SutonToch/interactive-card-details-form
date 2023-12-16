@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
 import Cards from './Cards.tsx'
 import FormComplete from './FormComplete.tsx';
-import './../styles/Form.css'
+import './../styles/form.css'
 
 export default function Form() {
     const namePattern = "^[A-Za-z]+\\s+[A-Za-z\\s]+$"
