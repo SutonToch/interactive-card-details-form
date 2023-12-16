@@ -17,7 +17,9 @@ input {
     display: block;
     width: 100%;
 
-    color: var.$clr-dark-grayish-violet;
+    color: var.$clr-very-dark-violet;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
 
     margin-top: 0.4em;
     padding: 0.5rem;
@@ -63,7 +65,7 @@ input:focus {
     border: none;
 }
 
-.submit:hover {
+.submit:hover, .submit:focus {
     opacity: 0.95;
 }
 

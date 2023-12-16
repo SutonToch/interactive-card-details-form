@@ -23,7 +23,7 @@
   margin-top: 3em;
   cursor: pointer;
 }
-.form-complete-container button:hover {
+.form-complete-container button:hover, .form-complete-container button:focus {
   opacity: 0.95;
 }
 

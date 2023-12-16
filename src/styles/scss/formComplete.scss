@@ -27,7 +27,7 @@
         margin-top: 3em;
         cursor: pointer;
 
-        &:hover {
+        &:hover, &:focus {
             opacity: 0.95;
         }
     }

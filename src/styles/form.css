@@ -14,7 +14,9 @@ label {
 input {
   display: block;
   width: 100%;
-  color: hsl(279, 6%, 55%);
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+  letter-spacing: 0.04rem;
   margin-top: 0.4em;
   padding: 0.5rem;
   border: 1px solid hsl(270, 3%, 87%);
@@ -58,7 +60,7 @@ input:focus {
   border: none;
 }
 
-.submit:hover {
+.submit:hover, .submit:focus {
   opacity: 0.95;
 }
 
