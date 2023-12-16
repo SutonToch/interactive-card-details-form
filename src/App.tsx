@@ -6,9 +6,9 @@ export default function App() {
   return (
     <div className="app-container">
       <div className="background-image"/>
-      <div className="form-container">
+      <main className="form-container">
         <Form />
-      </div>
+      </main>
     </div>
   )
 }

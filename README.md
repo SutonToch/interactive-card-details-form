@@ -31,13 +31,15 @@ Users should be able to:
 
 ### Screenshot
 
-TODO
-![](./screenshot.jpg)
+![](./screenshots/mobile_active_states.png)
+![](./screenshots/mobile_complete_state.png)
+![](./screenshots/desktop_active_states.png)
+![](./screenshots/desktop_complete_state.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://sutontoch.github.io/interactive-card-details-form/)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-card-details-form-using-react-gCT_bVVcAq](https://www.frontendmentor.io/solutions/interactive-card-details-form-using-react-gCT_bVVcAq)
+- Live Site URL: [https://sutontoch.github.io/interactive-card-details-form/](https://sutontoch.github.io/interactive-card-details-form/)
 
 ## My process
 

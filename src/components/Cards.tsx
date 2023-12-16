@@ -20,14 +20,14 @@ export default function Cards(props:CardsProps) {
   return (
     <>
         <div className="card-front-container">
-            <img src={cardFront} />
-            <img className="card-logo" src={cardFrontLogo} />
+            <img src={cardFront} alt={"example card front"}/>
+            <img className="card-logo" src={cardFrontLogo} alt={"card logo"} />
             <p className="card-front-cardNumber">{formData.card_number ? formData.card_number : "0000 0000 0000 0000"}</p>
             <p className="card-front-name">{formData.name ? formData.name : "Jane Appleseed"}</p>
             <p className="card-front-month-year">{formData.month ? formData.month : "00"}/{formData.year ? formData.year : "00"}</p>
         </div>
         <div className="card-back-container">
-            <img src={cardBack}/>
+            <img src={cardBack} alt={"example card back"}/>
             <p className="card-back-cvc">{formData.cvc ? formData.cvc : "000"}</p>
         </div>
     </>
