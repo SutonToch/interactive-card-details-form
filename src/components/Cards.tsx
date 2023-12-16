@@ -1,4 +1,4 @@
-import './../styles/Cards.css'
+import './../styles/cards.css'
 import cardFront from './../assets/bg-card-front.png'
 import cardFrontLogo from './../assets/card-logo.svg'
 import cardBack from './../assets/bg-card-back.png'
